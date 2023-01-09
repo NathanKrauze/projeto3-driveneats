@@ -19,73 +19,83 @@
         <section>
             <h1>Primeiro, seu prato</h1>
             <div class="opcoes pratos">
-                <div class="opcao" onclick="selecionar(this, 1)">
+                <div data-test="dish" class="opcao" onclick="selecionar(this, 1)">
                     <img src="imgs/frango_yin_yang.png"/>
                     <h3>Frango yin yang</h3>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <h4>R$ 14,90</h4>
+                    <h4 data-test="item-price">R$ <strong>14,90</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao" onclick="selecionar(this, 1)">
+                <div data-test="dish" class="opcao" onclick="selecionar(this, 1)">
                     <img src="imgs/frango_yin_yang.png"/>
                     <h3>Frango yin yang</h3>
                     <p>Mais batata, menos salada</p>
-                    <h4>R$ 15,90</h4>
+                    <h4 data-test="item-price">R$ <strong>15,90</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao" onclick="selecionar(this, 1)">
+                <div data-test="dish" class="opcao" onclick="selecionar(this, 1)">
                     <img src="imgs/frango_yin_yang.png"/>
                     <h3>Frango yin yang</h3>
                     <p>Menos batata, mais salada</p>
-                    <h4>R$ 13,90</h4>
+                    <h4 data-test="item-price">R$ <strong>13,90</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <h1>Agora, sua bebida</h1>
             <div class="opcoes bebidas">
-                <div class="opcao" onclick="selecionar(this, 2)">
+                <div data-test="drink" class="opcao" onclick="selecionar(this, 2)">
                     <img src="imgs/coca-cola.png"/>
                     <h3>Coca gelada</h3>
                     <p>Lata 350 ml</p>
-                    <h4>R$ 5,00</h4>
+                    <h4 data-test="item-price">R$ <strong>5,00</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao" onclick="selecionar(this, 2)">
+                <div data-test="drink" class="opcao" onclick="selecionar(this, 2)">
                     <img src="imgs/coca-cola.png"/>
                     <h3>Coca gelada</h3>
                     <p>Litro 1,5l</p>
-                    <h4>R$ 9,00</h4>
+                    <h4 data-test="item-price">R$ <strong>9,00</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao" onclick="selecionar(this, 2)">
+                <div data-test="drink" class="opcao" onclick="selecionar(this, 2)">
                     <img src="imgs/coca-cola.png"/>
                     <h3>Coca gelada</h3>
                     <p>Litro 2l</p>
-                    <h4>R$ 12,00</h4>
+                    <h4 data-test="item-price">R$ <strong>12,00</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <h1>Por fim, sua sobremesa</h1>
             <div class="opcoes sobremesas">
-                <div class="opcao" onclick="selecionar(this, 3)">
+                <div data-test="dessert" class="opcao" onclick="selecionar(this, 3)">
                     <img src="imgs/pudim.png"/>
                     <h3>Pudim</h3>
                     <p>Pequeno</p>
-                    <h4>R$ 3,50</h4>
+                    <h4 data-test="item-price">R$ <strong>3,50</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao" onclick="selecionar(this, 3)">
+                <div data-test="dessert" class="opcao" onclick="selecionar(this, 3)">
                     <img src="imgs/pudim.png"/>
                     <h3>Pudim</h3>
                     <p>Médio</p>
-                    <h4>R$ 6,00</h4>
+                    <h4 data-test="item-price">R$ <strong>6,00</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="opcao" onclick="selecionar(this, 3)">
+                <div data-test="dessert" class="opcao" onclick="selecionar(this, 3)">
                     <img src="imgs/pudim.png"/>
                     <h3>Pudim</h3>
                     <p>Grande</p>
-                    <h4>R$ 9,00</h4>
+                    <h4 data-test="item-price">R$ <strong>9,00</strong></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </section>
         <footer>
-            <button>Selecione os 3 itens <br>
+            <button data-test="order-btn" disabled onclick="finalizar(this)">Selecione os 3 itens <br>
                 para fechar o pedido</button>
         </footer>
     </main>
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
