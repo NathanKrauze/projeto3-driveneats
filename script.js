@@ -45,7 +45,7 @@ function verifica_N_Opcoes () {
     if (nOpcaoSelecionada === 3) {
         const botaofinal = document.querySelector('button');
         botaofinal.classList.add('acionavel');
-        botaofinal.innerHTML = "Finalizar pedido";
+        botaofinal.innerHTML = "Fechar pedido";
         botaofinal.removeAttribute('disabled');
     }
 }
