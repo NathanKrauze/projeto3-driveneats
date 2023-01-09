@@ -74,7 +74,7 @@ function finalizar(botaohtml) {
     precoFinal = precoP + precoB + precoS
     precoFinal = precoFinal.toFixed(2)
 
-    let msg = `Olá, gostaria de fazer o pedido: \n- Prato: Frango Yin Yang \n- Bebida: Coquinha Gelada \n- Sobremesa: Pudim \nTotal: R$ ${precoFinal}`
+    let msg = `Olá, gostaria de fazer o pedido: \n- Prato: Frango yin yang \n- Bebida: Coca Gelada \n- Sobremesa: Pudim \nTotal: R$ ${precoFinal}`
 
     const enviarmsg = `https://wa.me/5527999999999?text=${encodeURIComponent(msg)}`
     window.open(enviarmsg)
